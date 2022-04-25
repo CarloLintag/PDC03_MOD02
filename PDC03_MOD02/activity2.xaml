@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC03_MOD02.activity2">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Slider VerticalOptions="CenterAndExpand"
+                    ValueChanged="changedSliderValue"/>
+
+            <Label x:Name="labelValue"
+                   Text="Slider Value"
+                   TextColor="Black"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"/>
+
+            <Button Text="Submit"
+                    Clicked="clickedButton"
+                    TextColor="White"
+                    BackgroundColor="SteelBlue"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

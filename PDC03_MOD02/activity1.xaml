@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC03_MOD02.activity1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Module 02- Activity04 (Data Binding Mode and Grid) by Carlo Lintag"
+                   TextColor="Black"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="Home" 
+                    Clicked="homePage"
+                    TextColor="White"
+                    BackgroundColor="SteelBlue"
+                    />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

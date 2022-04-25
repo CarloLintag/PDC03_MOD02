@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC03_MOD02.activity4">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+
+                <Label
+                    Text="R0 C0"
+                    TextColor="Black"
+                    Grid.Row="0" Grid.Column="0"
+                    />
+
+                <Label
+                    Text="R1 C0"
+                    TextColor="Black"
+                    Grid.Row="1" Grid.Column="0"
+                    />
+                <Label
+                    Text="R2 C0"
+                    TextColor="Black"
+                    Grid.Row="2" Grid.Column="0"
+                    />
+
+                <Label
+                    Text="R3 C0"
+                    TextColor="Black"
+                    Grid.Row="3" Grid.Column="0"
+                    />
+                <Label
+                    Text="R4 C0"
+                    TextColor="Black"
+                    Grid.Row="4" Grid.Column="0"
+                    />
+
+                <Label
+                    Text="R5 C0"
+                    TextColor="Black"
+                    Grid.Row="5" Grid.Column="0"
+                    />
+                <Label
+                    Text="R6 C0"
+                    TextColor="Black"
+                    Grid.Row="6" Grid.Column="0"
+                    />
+     
+                <Slider x:Name="rotateSlider"
+                    VerticalOptions="CenterAndExpand"
+                    Maximum="360"
+                    Grid.Row="10" Grid.Column="0"
+                />
+
+                <Label Text="{Binding Value, StringFormat=' {0:F0} '}"
+                   BindingContext="{x:Reference Name=rotateSlider}"
+                   Rotation="{Binding Path=Value}"
+                   TextColor="Black"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="Center" 
+                   Grid.Row="11" Grid.Column="0"/>
+                
+                <Label BindingContext="{x:Reference Name=rotateSlider}"
+                   Text="{Binding Value, StringFormat='The angle is {0:F0} degrees'}"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand"
+                   Grid.Row="12" Grid.Column="0"
+                />
+                
+
+
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
